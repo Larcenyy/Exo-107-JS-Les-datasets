@@ -57,3 +57,21 @@ else{
     p7.innerHTML = "La valeur est fausse"
 }
 
+
+
+
+let Personne = function (nom, prenom, age){
+    this.nom = nom
+    this.prenom = prenom
+    this.age = age
+}
+
+John = new Personne('Doe', "John", 19);
+
+let elem = document.createElement("div")
+document.body.appendChild(elem);
+
+elem.dataset.name = John.prenom
+elem.dataset.nom = John.nom
+elem.dataset.age = John.age
+elem.innerHTML = 'test'
